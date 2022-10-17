@@ -3,6 +3,7 @@
         let grid_cell: number[][] = [];
 
         for (let x = 0; x < m; ++x) {
+
             grid_cell[x] = [];
 
             for (let y = 0; y < n; ++y) {
