@@ -11,13 +11,19 @@
  */
 class Solution {
 public:
-    TreeNode* invertTree(TreeNode* root) {
-        if (root == NULL) {return NULL;}
-
-        swap(root->left, root->right);
-        invertTree(root->left);
-        invertTree(root->right);
-        return root;
-        
+    vector<int> input;
+    int kthSmallest(TreeNode* root, int k) {
+        calc(root);
+        sort(input.begin(), input.end());
+        return input[k-1];
     }
+
+    void calc(TreeNode* root) {
+        if (root == NULL) {return;}
+        input.push_back(root->val);
+        calc(root->left);
+        calc(root->right);
+    }
+
+
 };
