@@ -271,3 +271,34 @@ public:
 Node* p = new Node(x, y);
 p -> x;                   // access class members;
 p -> print();             // access class member function;
+
+
+/*********************** greater **********************/
+//It is defined with the same behavior as:
+//C++11
+template <class T> struct greater {
+  bool operator() (const T& x, const T& y) const {return x>y;}
+  typedef T first_argument_type;
+  typedef T second_argument_type;
+  typedef bool result_type;
+};
+
+// Member types
+//      member type	definition	notes
+//      first_argument_type	T	Type of the first argument in member operator()
+//      second_argument_type	T	Type of the second argument in member operator()
+//      result_type	bool	Type returned by member operator()
+
+// greater example
+#include <iostream>     // std::cout
+#include <functional>   // std::greater
+#include <algorithm>    // std::sort
+int main () {
+  int numbers[]={20,40,50,10,30};
+  std::sort (numbers, numbers+5, std::greater<int>());
+  for (int i=0; i<5; i++)
+    std::cout << numbers[i] << ' ';
+  std::cout << '\n';
+  return 0;
+}
+// OUTPUT:  50 40 30 20 10
