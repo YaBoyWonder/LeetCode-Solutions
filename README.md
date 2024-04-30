@@ -1,6 +1,8 @@
 # LeetCode-Solutions
 These are some of my solutions to the problems that I solved.
-
+![LeetCode Profile](https://leetcode.com/u/WonderBread/)
 </br>
 
-![programming meme](https://img.ifunny.co/images/8dd0fa462936b3139d926e612a2241dd636581b67f47341abf890d4f00dc1990_1.jpg)
+
+
+![programming meme](https://miro.medium.com/v2/resize:fit:500/1*8Yx8zFrJsyy2H3or9325sg.png)
