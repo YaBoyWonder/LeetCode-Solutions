@@ -1,6 +1,6 @@
 # LeetCode-Solutions
-These are some of my solutions to the problems that I solved.
-![LeetCode Profile](https://leetcode.com/u/WonderBread/)
+These are some of my solutions to the problems that I solved. The rest are on my
+[LeetCode Profile](https://leetcode.com/u/WonderBread/)
 </br>
 
 
